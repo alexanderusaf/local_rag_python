@@ -49,16 +49,16 @@ Start by ensuring that you are able to execute python programs on your machine. 
 ### Prerequisites
 
 In a terminal, Anaconda Powershell Prompt, or other command line interface :
-  ```sh
-  python --version # should return >= v3.11.7
-  pip show ollama # should show >= v0.5.0
-  pip show chromadb #should show >= v1.0.0
-  ```
+```sh
+python --version # should return >= v3.11.7
+pip show ollama # should show >= v0.5.0
+pip show chromadb #should show >= v1.0.0
+```
 
 If you are missing dependencies, you can install them using PiP :
 ```sh
-  pip install chromadb
-  pip install ollama
+pip install ollama
+pip install chromadb
 ```
 
 
@@ -69,17 +69,17 @@ Below is an example of how you may install and run the project locally.
 
 1. Access the repository [Local RAG Python](https://github.com/alexanderusaf/local_rag_python)
 2. Clone the repo using git (alternatively you can download and extract the compressed file)
-   ```sh
-   git clone https://github.com/alexanderusaf/local_rag_python
-   ```
+```sh
+git clone https://github.com/alexanderusaf/local_rag_python
+```
 3. Change directory into the project directory
 ```sh
 cd ./local_rag_python
 ```
 4. Execute the Python program
-   ```sh
-   python local_rag.py
-   ```
+```sh
+python local_rag.py
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

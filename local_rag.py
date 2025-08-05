@@ -9,12 +9,7 @@
 import ollama, chromadb
 
 documents = [
-  "Llamas are members of the camelid family meaning they're pretty closely related to vicuñas and camels",
-  "Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago in the Peruvian highlands",
-  "Llamas can grow as much as 6 feet tall though the average llama between 5 feet 6 inches and 5 feet 9 inches tall",
-  "Llamas weigh between 280 and 450 pounds and can carry 25 to 30 percent of their body weight",
-  "Llamas are vegetarians and have very efficient digestive systems",
-  "Llamas live to be about 20 years old, though some only live for 15 years and others live to be 30 years old",
+    "City of San Antonio Ordinance : PMC 404.4.1 Room area. Every living room shall contain at least 120 square feet (11.2m2) and every bedroom shall contain at least 70 square feet (6.5m2)"
 ]
 
 client = chromadb.Client()
@@ -31,18 +26,13 @@ for i, d in enumerate(documents):
   )
 
 # an example input
-input = "What animals are llamas related to?"
+input = "My client is developing a multi-million dollar low income housing project in the city of San Antonio. What are the size requirements for living rooms in the city of San Antonio?"
 
 # generate an embedding for the input and retrieve the most relevant doc
 response = ollama.embed(
   model="mxbai-embed-large",
-  input="What animals are llamas related to?"
+  input=input
 )
-
-# TEST PRINTING
-print(response["embeddings"])
-# TEST PRINTING
-
 
 results = collection.query(
   query_embeddings=[response["embeddings"][0]],

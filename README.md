@@ -75,7 +75,10 @@ qwen3:8b                    500a1f067a9f    5.2 GB    4 minutes ago
 mxbai-embed-large:latest    468836162de7    669 MB    17 minutes ago
 ```
 
-
+Lastly, we need to ensure that the Ollama server is running in the background. In a new terminal, use the '$ ollama serve' command.
+```sh
+ollama serve
+```
 
 ### Installation and Execution
 

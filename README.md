@@ -27,7 +27,7 @@ Retrieval augmented generation solves essential problems with large language mod
 
 How?
 
-This project will provide an brief overview of RAG, setup instructions for a Python development environment which implements RAG with Ollama, and serve as a Pluralsight Author's Audition.
+This project will provide an brief overview of RAG and setup instructions for a Python development environment which implements RAG with Ollama.
 
 ### Built With
 
@@ -59,6 +59,20 @@ If you are missing dependencies, you can install them using PiP :
 ```sh
 pip install ollama
 pip install chromadb
+```
+
+We will need to install an embedding model and a LLM to respond to our query. I've gone ahead and used 'mx-bai-embed-large' and 'qwen3:8b'. You may need to ensure that your machine has resources available to run these models.
+```sh
+ollama pull mxbai-embed-large
+ollama pull qwen3:8b
+```
+
+You can verify the model installation by typing '$ ollama list'
+```sh
+...\code\local_rag_python> ollama list
+NAME                        ID              SIZE      MODIFIED
+qwen3:8b                    500a1f067a9f    5.2 GB    4 minutes ago
+mxbai-embed-large:latest    468836162de7    669 MB    17 minutes ago
 ```
 
 

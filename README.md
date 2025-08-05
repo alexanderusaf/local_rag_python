@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/plsight.png" alt="Logo" width="160">
+    <img src="images/plsight_logo.png" alt="Logo" width="160">
   </a>
 
   <h3 align="center">Local Retrieval Augmented Generation Python</h3>

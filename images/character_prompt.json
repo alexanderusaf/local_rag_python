@@ -1,0 +1,14 @@
+{
+  "prompt": "Create flat and minimalist male avatar in vector style. Simple line features wearing an orange shirt. The style should be modern, cartoon-like, and consistent, using orange and pink color palettes with minimal shading. The background should be plain white. No detailed facial features beyond eyes, eyebrows, nose, and mouth. Emphasize clean, symmetrical design with rounded shapes.",
+  "style": "flat, minimalist, vector illustration",
+  "colors": {
+    "primary": "#ff2a5e",
+    "secondary": "#ff562c",
+    "accents": ["#000000", "#ffffff"]
+  },
+  "characters": 1,
+  "layout": "centered",
+  "background": "white",
+  "medium": "digital illustration",
+  "use_case": "avatar generator, web UI"
+}
